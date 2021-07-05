@@ -1,0 +1,76 @@
+<!--For help with the contact page I used W3Schools-->
+<!--Here is a link to the website: https://www.w3schools.com/howto/howto_css_contact_section.asp-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Vinyl Record Collection | contact me</title>
+    <link rel="stylesheet" href="style.css" type ="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src="code.js"></script> 
+
+</head>
+<body>
+
+    <!--Navigation bar-->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h2>My Vinyl Record Collection</h2>
+            </div>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <div class="menu">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="collection.html">My collection</a></li>
+                <li><a href="saveForLater.html">Saved for later</a></li>
+                
+              </ul>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <img src="https://c1.wallpaperflare.com/preview/716/737/263/vinyl-music-sound-old.jpg">
+                
+            </div>
+        </div>
+
+    </div>
+
+<!--Contact me section-->
+
+<div class="container2">
+    <div style="text-align:center">
+        <h2>Contact me</h2>
+        <p>If you have any questions, feel free to contact me</p>
+    </div>
+    <div class="row2">
+        <div class="column2">
+            <img src="https://i.pinimg.com/736x/e6/e2/36/e6e2368bad474dfca3b160cc58a50e38.jpg" style="width:100%">
+        </div>
+        <div class="column2">
+            <form action="/action_page.php">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Your email address">
+                <label for="subject">Subject</label>
+               <textarea id="subject" name="subject" placeholder="write something"
+               style="height:170px"></textarea>
+               <button onclick="contactMe()">Contact Me</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+    </body>
+</html>

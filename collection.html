@@ -1,0 +1,308 @@
+<!--For help with collection page I used W3Schools-->
+<!--Here is a link to the website: https://www.w3schools.com/css/css_image_gallery.asp-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Vinyl Record Collection | The collection</title>
+    <link rel="stylesheet" href="style.css" type ="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src="code.js"></script> 
+</head>
+<body onload="javascript:hideTable()">
+      <!--Navigation bar-->
+      <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h2>My Vinyl Record Collection</h2>
+            </div>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="saveForLater.html">Saved for later</a></li>
+                
+              </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <img src="https://c1.wallpaperflare.com/preview/716/737/263/vinyl-music-sound-old.jpg">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!--Gallery-->
+    <h2>My Record Collection</h2>
+    <div class="gallery">
+        <a target="_blank" href="gallery/astroworld.jpg">
+        <img id="image5" src="https://merchbar.imgix.net/product/crop/1616/534337/7FBGFV-1578533257-1280x1280-1578533253-astro.jpg?w=640&h=640&quality=60&auto=compress%252Cformat"  width="600" height="400"></a>
+        <button onclick="saveImage('image5')">Save Image</button>
+        <div class="desc">Astroworld By Travis Scott</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="gallery/after_hours.jpg">
+        <img id="image6" src="https://i.ebayimg.com/images/g/wmwAAOSw-JBgSNsB/s-l640.jpg" width="600" height="400"></a>
+        <button onclick="saveImage('image6')">Save Image</button>
+        <div class="desc">After Hours By The Weeknd</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="gallery/born_to_die.jpg">
+        <img id="image7" src="https://cdn.shopify.com/s/files/1/2723/2340/products/image_9af657dd-3021-4c2f-8c65-64d02e3862f1_2000x.jpg?v=1596025985" width="600" height="400"></a>
+        <button onclick="saveImage('image7')">Save Image</button>
+        <div class="desc"> Born to Die by Lana Del Rey</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="gallery/folklore.jpg">
+        <img id="image8" src="https://target.scene7.com/is/image/Target/GUEST_3826f3b3-52bc-41a6-9a1b-8279192fc24c?wid=488&hei=488&fmt=pjpeg" width="600" height="400"></a>
+        <button onclick="saveImage('image8')">Save Image</button>
+        <div class="desc">Folklore by Taylor Swift</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="gallery/golden_hour.jpg">
+        <img id="image9" src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/imageFull/.fneRrrMW/SharedImage-81482.jpg?t=0dc83e74bba0fd52e337" width="600" height="400"></a>
+        <button onclick="saveImage('image9')">Save Image</button>
+        <div class="desc">Golden Hour by Kacey Musgraves</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="gallery/lemonade.jpg">
+        <img id="image10" src="https://images-na.ssl-images-amazon.com/images/I/815f0Q7RMrL._SL1500_.jpg" width="600" height="400"></a>
+        <button onclick="saveImage('image10')">Save Image</button>
+        <div class="desc">Lemonade by Beyonce</div>
+    </div>
+    <br>
+   
+
+
+    <!--Table of all of the albums-->
+    <button onclick="showTable()">Show full Collection</button>
+    <table id="recordTable" style="width:100%" >
+    <thead>
+        <tr>
+            <th>Artist</th>
+            <th>Album</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Adele</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Amy Winehouse</td>
+            <td>Back To Black</td>
+        </tr>
+        <tr>
+            <td>Ariana Grande</td>
+            <td>Positions</td>
+        </tr>
+        <tr>
+            <td>Artic Monkeys</td>
+            <td>AM</td>
+        </tr>
+        <tr>
+            <td>Beyonce</td>
+            <td>Lemonade</td>
+        </tr>
+        <tr>
+            <td>Billie Eilish</td>
+            <td>Don't smile at me</td>
+        </tr>
+        <tr>
+            <td>Billie Eilish</td>
+            <td>When we all fall asleep where do we go</td>
+        </tr>
+        <tr>
+            <td>Bruno Mars</td>
+            <td>Unorthodox Jukebox</td>
+        </tr>
+        <tr>
+            <td>Calvin Harris</td>
+            <td>Motion</td>
+        </tr>
+        <tr>
+            <td>Daft Punk</td>
+            <td>Random Access Memories</td>
+        </tr>
+        <tr>
+            <td>Dua Lipa</td>
+            <td>Dua Lipa</td>
+        </tr>
+        <tr>
+            <td>Dua Lipa</td>
+            <td>Future Nostalgia</td>
+        </tr>
+        <tr>
+            <td>Ed Sheeran</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>Ed Sheeran</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>Ed Sheeran</td>
+            <td>Divide</td>
+        </tr>
+        <tr>
+            <td>Ellie Goulding</td>
+            <td>Ligths</td>
+        </tr>
+        <tr>
+            <td>Florence + The machine</td>
+            <td>Ceremonials</td>
+        </tr>
+        <tr>
+            <td>Guardians of the galaxy 2 soundtrack</td>
+            <td>Guardians of the galaxy</td>
+        </tr>
+        <tr>
+            <td>Harry Styles</td>
+            <td>Harry Stles</td>
+        </tr>
+        <tr>
+            <td>Harry Styles</td>
+            <td>Fine Line</td>
+        </tr>
+        <tr>
+            <td>Hozier</td>
+            <td>Hozier</td>
+        </tr>
+        <tr>
+            <td>Imagine Dragons</td>
+            <td>Nigth Visions</td>
+        </tr>
+        <tr>
+            <td>J Cole</td>
+            <td>2014 Forest Hills Drive</td>
+        </tr>
+        <tr>
+            <td>Kacey Musgraves</td>
+            <td>Golden Hour</td>
+        </tr>
+        <tr>
+            <td>Kendrick Lamar</td>
+            <td>Damn</td>
+        </tr>
+        <tr>
+            <td>Khalid</td>
+            <td>Free Spirit</td>
+        </tr>
+        <tr>
+            <td>Lana del Rey</td>
+            <td>Born to die</td>
+        </tr>
+        <tr>
+            <td>Lana del Rey</td>
+            <td>Chemtrails over the country club</td>
+        </tr>
+        <tr>
+            <td>Lorde</td>
+            <td>Pure Heroine</td>
+        </tr>
+        <tr>
+            <td>Lorde</td>
+            <td>Melodrama</td>
+        </tr>
+        <tr>
+            <td>Michael Jackson</td>
+            <td>Thriller</td>
+        </tr>
+        <tr>
+            <td>Mumford & Sons</td>
+            <td>Babel</td>
+        </tr>
+        <tr>
+            <td>Nirvana</td>
+            <td>Nevermind</td>
+        </tr>
+        <tr>
+            <td>Notorious BIG</td>
+            <td>Greatest Hits</td>
+        </tr>
+        <tr>
+            <td>Rihanna</td>
+            <td>Good girl gone bad</td>
+        </tr>
+        <tr>
+            <td>Sam Smith</td>
+            <td>In the lonely hour</td>
+        </tr>
+        <tr>
+            <td>Sam Smith</td>
+            <td>The thrill of it all</td>
+        </tr>
+        <tr>
+            <td>Sam Smith</td>
+            <td>Love goes</td>
+        </tr>
+        <tr>
+            <td>Shawn Mendes</td>
+            <td>Handwritten</td>
+        </tr>
+        <tr>
+            <td>Shawn Mendes</td>
+            <td>Shawn Mendes</td>
+        </tr>
+        <tr>
+            <td>Taylor Swift</td>
+            <td>Fearless</td>
+        </tr>
+        <tr>
+            <td>Taylor Swift</td>
+            <td>1989</td>
+        </tr>
+        <tr>
+            <td>Taylor Swift</td>
+            <td>Folklore</td>
+        </tr>
+        <tr>
+            <td>Tom Misch</td>
+            <td>Geography</td>
+        </tr>
+        <tr>
+            <td>The Weeknd</td>
+            <td>After Hours</td>
+        </tr>
+        <tr>
+            <td>Travis Scott</td>
+            <td>Astroworld</td>
+        </tr>
+
+    </tbody>  
+    </table>
+    <button onclick="saveTable()">Save Table</button>
+    <form>
+    <!---Like & comment section-->
+        <p>Like the post</p>
+        <i onclick="likeDislike(this)" class="fa fa-thumbs-up"></i>
+      </form>
+      <form id="myComments">
+          <textarea id="comment" placeholder ="leave a comment" name="comment"></textarea>
+          <a href="#" onclick="leaveComment();">Comment</a>     
+      </form>
+
+      
+
+
+
+  
+
+
+
+
+</body>
+</html>

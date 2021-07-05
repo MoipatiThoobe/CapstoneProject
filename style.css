@@ -1,0 +1,280 @@
+/*The styling for the website*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*The font family for the site*/
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.button{
+  background-color:#000;
+  color: #ccc;
+}
+
+/*The styling for the navigation bar*/
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.hamburger{
+  background: none;
+  position: absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border:0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+.cross{
+  background: none;
+  position: absolute;
+  top: 0px;
+  right:0px;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border:0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+.menu{
+  z-index:1000000; 
+  font-weight:bold; 
+  font-size:0.8em; 
+  width:100%; 
+  background:#f1f1f1;  
+  position:absolute; 
+  text-align:center; 
+  font-size:12px;
+}
+.menu ul {
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+  list-style-image: none;
+}
+
+.menu li {
+  display: block;   
+  padding:15px 0 15px 0; 
+  border-bottom:#dddddd 1px solid;
+}
+.menu li:hover{
+  display: block;    
+  background:#ffffff; 
+  padding:15px 0 15px 0; 
+  border-bottom:#dddddd 1px solid;
+}
+.menu ul li a {
+  text-decoration:none;  
+  margin: 0px; color:#666;
+}
+.menu ul li a:hover {
+  color: #666;
+  text-decoration:none;
+}
+.menu a{
+  text-decoration:none; 
+  color:#666;
+}
+.menu a:hover{
+  text-decoration:none; 
+  color:#666;
+}
+
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+p {
+  color: #555;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.col-2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.container row {
+  margin-top: 70px;
+}
+
+/* Styling for the home page */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card img {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: #FFF;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*Styling for the collection page*/
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid #000;
+}
+
+th, td {
+  padding: 15px;
+}
+.hidden{
+  display: none;
+}
+
+/*styling for the contact me page*/
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: #FFF;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row2::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#list img {
+  max-width: 300px;
+}

@@ -1,0 +1,126 @@
+
+<!--For help the layout of the homepage I used W3schools-->
+<!--Here is a link to the website: https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Vinyl Record Collection</title>
+    <link rel="stylesheet" href="style.css" type ="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src="code.js"></script> 
+   
+</head>
+
+    <!--Navigation bar-->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h2>My Vinyl Record Collection</h2>
+            </div>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <div class="menu">
+              <ul>
+                <li><a href="collection.html">My Collection</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="saveForLater.html">Saved for later</a></li>
+                
+              </ul>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-2">
+                <img id="img" src="https://c1.wallpaperflare.com/preview/716/737/263/vinyl-music-sound-old.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <!--Home page content-->
+
+    <div class="row1">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2 id="heading1">How to start a record collection</h2>
+             <h5>Learn how to build a collection of your own, 1 Mar, 2021</h5>   
+            <img id="image1" src="https://i1.wp.com/www.pretoria.co.za/wp-content/uploads/2018/04/vinyl-records-945396_960_720-1.jpg?fit=663%2C373&ssl=1" width="200px">
+            <button onclick="saveImage('image1')">Save Image</button>
+            <form>
+              <p>Like the post</p>
+              <i onclick="likeDislike(this)" class="fa fa-thumbs-up"></i>
+            </form>
+            <form id="myComments">
+                <textarea id="comment" placeholder ="leave a comment" name="comment"></textarea>
+                <a href="#" onclick="leaveComment();">Comment</a>     
+            </form>
+            <div id="comments"></div>
+          </div>
+          <div class="save">
+            <div class="card">
+              <h2>How to maintain your records</h2>
+              <h5>Learn how to make your records last, 4 Apr, 2021</h5>
+              <img id="image2" src="https://www.rollingstone.com/wp-content/uploads/2019/11/KAIU-Vinyl-Record-Cleaning-Solution-1.jpg">
+              <button onclick="saveImage('image2')">Save Image</button>
+              <form>
+                <p>Like the post</p>
+                <i onclick="likeDislike(this)" class="fa fa-thumbs-up"></i>
+              </form>
+              <form id="myComments">
+                <textarea id="comment" placeholder ="leave a comment" name="comment"></textarea>
+                <a href="#" onclick="leaveComment();">Comment</a>     
+            </form>
+            <div id="comments"></div>
+            </div>
+          </div>
+        </div>
+
+    <!---About me section-->
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <img id="image3" src="https://scontent.fjnb11-1.fna.fbcdn.net/v/t1.6435-9/101387756_2859511520814194_8354578372818370560_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=cPVobfcavRUAX--SHCh&tn=SgmDPRsmzIUTBXUq&_nc_ht=scontent.fjnb11-1.fna&oh=133b36f89cb74b74bcc284e898f1875a&oe=60E1E28E">
+            <button onclick="saveImage('image3')">Save Image</button>
+            <p>Hello, my name is Moipati and I have been collecting records for 6 years</p>
+          </div>
+
+  <!---User testimonials-->
+          <div class="card">
+              <h2>Testimonial</h2>
+              <img id="image4" src="https://images1.westend61.de/0001194164pw/smiling-black-woman-BLEF05216.jpg">
+              <button onclick="saveImage('image4')">Save Image</button>
+              <p>This website helped me start my own record collection</p>
+          </div>
+
+  <!--Links to websites that sell vinyl records-->
+          <div class="card">
+            <h3>Where to buy Vinyl Records online</h3>
+            <a href="https://www.takealot.com/all?sort=Relevance&custom=vinyl-collection-rp">Takelot.com</a>
+            <br>
+            <a href="https://www.mrvinyl.co.za/?gclid=Cj0KCQjw5PGFBhC2ARIsAIFIMNdfZKbOW3E1SRiahpjssSyMEJA7IvE2qBz1Hz5akayuUQBLMXES9ewaAqVPEALw_wcB">My Vinyl</a>
+          </div>
+
+  <!---Newsletter-->
+          <div class="card">
+              <h3>Would you like to subscribe to a newsletter></h3>
+              <form>
+                  <input type="radio" id="yes"
+                  name="answer" value="yes">
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="no"
+                  name="answer" value="no">
+                  <label for="no">No</label>
+              </form>
+          </div>
+        </div>
+      </div>
+
+
+    
+</body>
+
+</html>
